@@ -1,0 +1,75 @@
+<nav class="navbar">
+  <div class="navbar-title">
+    <ul>
+      <li><a href="/">Sebastián Azcárate</a></li>
+    </ul>
+  </div>
+  <div class="navbar-links">
+    <ul>
+      <li><a href="/posts">Posts</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<style>
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    /* opacity: 1; */
+    height: 2rem;
+  }
+  .navbar-title {
+    margin-left: 3rem;
+  }
+  .navbar-links {
+    margin-right: 3rem;
+  }
+  .navbar-title ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  .navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  .navbar-title li {
+    list-style: none;
+  }
+  .navbar-links li {
+    list-style: none;
+    float: left;
+  }
+  .navbar-title li a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .navbar-links li a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .navbar-title a:hover {
+    background-color: #111;
+    border-radius: 25px;
+  }
+  .navbar-links li a:hover {
+    background-color: #111;
+    border-radius: 25px;
+  }
+</style>
