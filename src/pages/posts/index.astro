@@ -2,8 +2,116 @@
 import Layout from "../../layouts/Layout.astro";
 ---
 
-<Layout title="Sebastián Azcárate | About">
+<Layout title="Sebastián Azcárate | Posts">
   <main>
-    <h1>hello</h1>
+    <h1>Posts</h1>
+
+    <h2>Art posts</h2>
+
+    <ul class="posts-list">
+      <li>
+        <a href="/posts/history-of-calculus"
+          >Song <span class="span-li">History | Math</span></a
+        >
+      </li>
+      <li>
+        <a href="/posts/history-of-calculus"
+          >Song <span class="span-li">History | Math</span></a
+        >
+      </li>
+      <li>
+        <a href="/posts/history-of-calculus"
+          >Song <span class="span-li">History | Math</span></a
+        >
+      </li>
+    </ul>
+
+    <h2>Math posts</h2>
+    <!-- <p>Find below my posts.</p> -->
+    <ul class="posts-list">
+      <li>
+        <a href="/posts/history-of-calculus"
+          >History of Calculus <span class="span-li">History | Math</span></a
+        >
+      </li>
+      <li>
+        <a href="/posts/wave-equation"
+          >Wave equation <span class="span-li">History | Math | Physics</span
+          ></a
+        >
+      </li>
+      <li>
+        <a href="/posts/heat-equation"
+          >Heat equation <span class="span-li">History | Math | Physics</span
+          ></a
+        >
+      </li>
+      <li>
+        <a href="/posts/fourier-transform"
+          >Fourier transform
+          <span class="span-li">History | Math | Physics</span></a
+        >
+      </li>
+      <li>
+        <a href="/posts/laplace-transform"
+          >Laplace transform
+          <span class="span-li">History | Math | Physics</span></a
+        >
+      </li>
+    </ul>
+
+    <h2>Physics related posts</h2>
+    <ul class="posts-list">
+      <li>
+        <a href="/posts/history-of-calculus"
+          >Song <span class="span-li">History | Math</span></a
+        >
+      </li>
+      <li>
+        <a href="/posts/history-of-calculus"
+          >Song <span class="span-li">History | Math</span></a
+        >
+      </li>
+    </ul>
   </main>
 </Layout>
+
+<style>
+  main {
+    padding: 1.5rem;
+    max-width: 100ch;
+  }
+  .posts-list li {
+    border-radius: 5px;
+    margin: 5px;
+    color: #ff7a18;
+    background-color: #f2f2f2;
+  }
+  .posts-list a {
+    display: block;
+  }
+  .posts-list a:link {
+    text-decoration: none;
+    color: black;
+  }
+
+  .posts-list a:visited {
+    text-decoration: none;
+    color: #993333;
+  }
+
+  .posts-list a:hover {
+    text-decoration: none;
+    background-color: yellow;
+  }
+
+  .posts-list a:active {
+    text-decoration: none;
+    background-color: #9999ff;
+    color: yellow;
+  }
+  .span-li {
+    float: right;
+    padding-right: 0.5rem;
+  }
+</style>

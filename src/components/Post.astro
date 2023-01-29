@@ -1,0 +1,32 @@
+---
+export interface Props {
+  title: string;
+  body: string;
+  href: string;
+}
+
+const { href, title, body } = Astro.props;
+---
+
+<div class="post-item">
+  <p>{title}</p>
+  <p>{body}</p>
+  <button id="button" value={href}>Go to post</button>
+</div>
+
+<style>
+  .post-item {
+    background-color: grey;
+    color: black;
+    border-radius: 5px;
+  }
+</style>
+
+<script>
+  const btn: HTMLElement = document.getElementById("button")!;
+  btn.addEventListener("click", handleClick);
+
+  function handleClick() {
+    window.location.href = "posts/" + btn.getAttribute("value");
+  }
+</script>
