@@ -6,7 +6,18 @@ import Layout from "../../layouts/Layout.astro";
   <main>
     <h1>Hi there</h1>
     <p>My name is Sebastián Azcárate and I live in Argentina.</p>
+    <p>
+      I am mainly interested in science and technology, but I do also like arts
+      and other social topics.
+    </p>
     <p>This web site was built with Astro. Maths are rendered with Katex.</p>
+
+    <div class="img-container">
+      <img
+        src="https://avatars.mds.yandex.net/get-pdb/251121/c91bb445-29a5-4408-addb-9164a4e51d8d/orig"
+        alt="Doge"
+      />
+    </div>
   </main>
 </Layout>
 
@@ -14,5 +25,8 @@ import Layout from "../../layouts/Layout.astro";
   main {
     padding: 1.5rem;
     max-width: 100ch;
+  }
+  .img-container {
+    text-align: center;
   }
 </style>
