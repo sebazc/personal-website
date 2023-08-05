@@ -1,23 +1,30 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import Latex from "../../components/Latex.astro";
+
+// const html2 = katex.renderToString("\\sum_i x^e");
 ---
 
 <Layout title="Sebastián Azcárate | About">
   <main>
-    <h1>Hi there</h1>
-    <p>My name is Sebastián Azcárate and I live in Argentina.</p>
+    <h1>Dear Reader,</h1>
     <p>
-      I am mainly interested in science and technology, but I do also like arts
-      and other social topics.
+      My name is Sebastián Azcárate and I come from Argentina. My intention with
+      this site is to post things I find interesting and occasionally personal
+      works as well.
+      <!-- This actually causes
+      me a financial problem when going to libraries, and I buy more books that
+      I can really read! -->
     </p>
-    <p>This web site was built with Astro. Maths are rendered with Katex.</p>
+    <p>
+      This website was built with <a href="https://astro.build/" target="_blank"
+        >Astro</a
+      >.
+    </p>
 
-    <div class="img-container">
-      <img
-        src="https://avatars.mds.yandex.net/get-pdb/251121/c91bb445-29a5-4408-addb-9164a4e51d8d/orig"
-        alt="Doge"
-      />
-    </div>
+    <!-- <div class="image-container">
+      <img src="20230128_232651.jpg" alt="Abasto" />
+    </div> -->
   </main>
 </Layout>
 
@@ -26,7 +33,14 @@ import Layout from "../../layouts/Layout.astro";
     padding: 1.5rem;
     max-width: 100ch;
   }
-  .img-container {
-    text-align: center;
+
+  .image-container {
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
   }
 </style>

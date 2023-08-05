@@ -5,8 +5,15 @@ import Layout from "../../layouts/Layout.astro";
 <Layout title="Sebastián Azcárate | Contact">
   <main>
     <h1>Contact Information</h1>
-    <p>Find below my social media</p>
 
+    <h2>Email</h2>
+    <p>
+      Write to me: <a href="mailto: seba.azc@gmail.com">seba.azc@gmail.com</a>
+      <!-- Write to me at: seba.azc@gmail.com -->
+    </p>
+
+    <h2>Social media</h2>
+    <p>Find me in:</p>
     <div class="social-media-icons">
       <!-- LinkedIn -->
       <a href="https://www.linkedin.com/in/sebastian-azcarate" target="_blank">
@@ -16,6 +23,7 @@ import Layout from "../../layouts/Layout.astro";
             alt="LinkedIn"
             width="50"
             height="50"
+            class="social-icon"
           /></i
         >
       </a>
@@ -27,28 +35,31 @@ import Layout from "../../layouts/Layout.astro";
             alt="Github"
             width="50"
             height="50"
+            class="social-icon"
           />
         </i>
       </a>
       <!-- YouTube -->
-      <a href="https://www.youtube.com/@sebastian-azcarate" target="_blank">
+      <!-- <a href="https://www.youtube.com/@sebastian-azcarate" target="_blank">
         <i class="fab fa-instagram">
           <img
             src="https://cdn1.iconfinder.com/data/icons/logotypes/32/youtube-1024.png"
             alt="YouTube"
             width="50"
             height="50"
+            class="social-icon"
           />
         </i>
-      </a>
-      <!-- Twitter -->
+      </a> -->
+      <!-- X / Twitter -->
       <a href="https://twitter.com/seba_azc" target="_blank">
         <i class="fab fa-linkedin">
           <img
-            src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-twitter-1024.png"
-            alt="Twitter"
+            src="https://seeklogo.com/images/T/twitter-x-logo-101C7D2420-seeklogo.com.png"
+            alt="X / Twitter"
             width="50"
             height="50"
+            class="social-icon"
           />
         </i>
       </a>
@@ -63,6 +74,7 @@ import Layout from "../../layouts/Layout.astro";
             alt="GoodReads"
             width="50"
             height="50"
+            class="social-icon"
           /></i
         >
       </a>
@@ -99,6 +111,13 @@ import Layout from "../../layouts/Layout.astro";
 
     .social-media-icons a i {
       margin-right: 10px;
+    }
+
+    .social-icon {
+      transition: all 0.2s ease-in-out;
+    }
+    .social-icon:hover {
+      transform: scale(1.1);
     }
   </style>
 </Layout>

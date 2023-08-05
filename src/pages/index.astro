@@ -7,17 +7,18 @@ import Layout from "../layouts/Layout.astro";
   <!-- https://pixabay.com/photos/pantheon-rome-italy-architecture-293074/ -->
   <main>
     <h1>
-      Hello reader<span style="font-size:50px;">&#128206;</span>
+      Hello<span style="font-size:60px;">&#128206;</span>
     </h1>
     <p>
-      I will use this website to post things I find interesting. Some of the
+      Welcome to my personal website.
+      <!-- I will use this website to post things I find interesting. Some of the
       posts will be overviews on a subject, some will be about general culture,
-      and other posts will be just my thoughts.
+      and other posts will be just my thoughts. -->
     </p>
 
-    <h2>Latest posts</h2>
+    <!-- <h2>Interesting</h2> -->
     <!-- <p>Find below my posts.</p> -->
-    <ul class="posts-list">
+    <!-- <ul class="posts-list">
       <li>
         <a href="/posts/history-of-calculus"
           >History of Calculus <span class="span-li">History | Math</span></a
@@ -49,11 +50,46 @@ import Layout from "../layouts/Layout.astro";
       </li>
     </ul>
 
-    <h2>Tittle</h2>
-    <p>These are some words.</p>
+    <h2>Links</h2>
+    <ul>
+      <li>link 1</li>
+      <li>link 2</li>
+      <li>
+        <a href="https://foro.rinconmatematico.com/" target="_blank"
+          >Rincón Matematico. Un muy buen foro sobre matemática en español
+          (Spanish)</a
+        >
+      </li>
+    </ul> -->
 
-    <h2>Websites I like</h2>
-    <p>It is good to have those websites.</p>
+    <!-- three images
+    <div class="image-container">
+      <img
+        src="https://artealinstante.files.wordpress.com/2018/01/trovadores1.jpg"
+        alt="Image 1"
+        class="square"
+      />
+      <img src="https://via.placeholder.com/150" alt="Image 2" class="square" />
+      <img src="https://via.placeholder.com/150" alt="Image 3" class="square" />
+    </div> -->
+
+    <!-- <div class="tweet-container">
+      <blockquote class="twitter-tweet">
+        <p lang="en" dir="ltr">
+          Falcon 9 launch view from cockpit at FL340 ✈️<br /><br />📸 Edgardo
+          German <a href="https://t.co/lxlUSkxy6C">pic.twitter.com/lxlUSkxy6C</a
+          >
+        </p>&mdash; Aviation (@ilove_aviation) <a
+          href="https://twitter.com/ilove_aviation/status/1578567347018792960?ref_src=twsrc%5Etfw"
+          >October 8, 2022</a
+        >
+      </blockquote>
+      <script
+        async
+        src="https://platform.twitter.com/widgets.js"
+        charset="utf-8"
+      ></script>
+    </div> -->
   </main>
 </Layout>
 
@@ -66,7 +102,7 @@ import Layout from "../layouts/Layout.astro";
     border-radius: 5px;
     margin: 5px;
     color: #ff7a18;
-    background-color: #f2f2f2;
+    /* background-color: #f2f2f2; */
   }
   .posts-list a {
     display: block;
@@ -84,16 +120,55 @@ import Layout from "../layouts/Layout.astro";
 
   .posts-list a:hover {
     text-decoration: none;
-    background-color: yellow;
+    background-color: #f2f2f2;
   }
 
   .posts-list a:active {
     text-decoration: none;
-    background-color: #9999ff;
-    color: yellow;
+    background-color: #f2f2f24f;
+    /* background-color: #9999ff; */
+    /* color: yellow; */
   }
   .span-li {
     float: right;
     padding-right: 0.5rem;
+    visibility: hidden;
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+  }
+
+  .square {
+    width: 150px;
+    height: 150px;
+    margin: 0 20px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .square:hover {
+    transform: scale(1.1);
+  }
+
+  .tweet-container {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+
+  .twitter-tweet {
+    display: inline-block;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .twitter-tweet-rendered {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
   }
 </style>
