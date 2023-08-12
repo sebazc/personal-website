@@ -1,5 +1,5 @@
 ---
-import Layout from "../../layouts/Layout.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Sebastián Azcárate">
@@ -12,9 +12,11 @@ import Layout from "../../layouts/Layout.astro";
       src="https://giphy.com/embed/yXBqba0Zx8S4"
       width="480"
       height="324"
-      frameBorder="0"
+      frameborder="0"
       class="giphy-embed img"
-      allowFullScreen></iframe>
+      allowfullscreen></iframe>
+
+    <div class="text-container"><h2>Whoops! Where are you going?</h2></div>
   </main>
 </Layout>
 
@@ -24,7 +26,9 @@ import Layout from "../../layouts/Layout.astro";
     max-width: 100ch;
   }
 
-  .image-container {
+  .text-container {
+    text-align: center;
+    /* font-size: 30px; */
   }
 
   .img {
