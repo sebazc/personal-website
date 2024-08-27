@@ -8,8 +8,21 @@ import Layout from "../../layouts/Layout.astro";
 
     <ul class="posts-list">
       <li>
+        <a href="/posts/buildings-in-berlin"
+          >Inside buildings in Berlin<span class="span-li">Technology</span></a
+        >
+      </li>
+      <!-- <li>
+        <a href="/posts/mercados-financieros-en-argentina"
+          >Los mercados financieros en Argentina<span class="span-li"
+            >Technology</span
+          ></a
+        >
+      </li> -->
+      <li>
         <a href="/posts/belle-qui-tiens-ma-vie"
-          >Belle qui tiens ma vie - Thoinot Arbeau<span class="span-li">hi</span
+          >Belle qui tiens ma vie - Thoinot Arbeau<span class="span-li"
+            >Music</span
           >
         </a>
       </li>
@@ -31,6 +44,7 @@ import Layout from "../../layouts/Layout.astro";
   .posts-list a {
     display: block;
     padding-left: 0.5rem;
+    border-radius: 25px;
   }
   .posts-list a:link {
     text-decoration: none;
@@ -56,6 +70,12 @@ import Layout from "../../layouts/Layout.astro";
   .span-li {
     float: right;
     padding-right: 0.5rem;
+    background-color: #604cc3;
+    background-color: #cfc9ed;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 25px;
     visibility: hidden;
   }
 </style>
