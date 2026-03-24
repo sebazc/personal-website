@@ -1,9 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Image } from 'astro:assets';
+import pantheonImage from '../../public/pantheon-293074_1280.jpg';
 ---
 
 <Layout title="Sebastián Azcárate">
-  <img src="pantheon-293074_1280.jpg" alt="" width="100%" />
+  <!-- <img src="pantheon-293074_1280.jpg" alt="" width="100%" /> -->
+  <Image src={pantheonImage} alt="Pantheon Image"  style="width: 100%; height: auto;" />
   <!-- https://pixabay.com/photos/pantheon-rome-italy-architecture-293074/ -->
   <main>
     <h1>
