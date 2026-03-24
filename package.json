@@ -10,8 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/image": "^0.13.0",
-    "astro": "^2.0.2",
+    "astro": "^6.0.8",
     "katex": "^0.16.4"
   },
   "devDependencies": {
